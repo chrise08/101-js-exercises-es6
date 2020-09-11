@@ -14,8 +14,8 @@ const assert = function(actual, expected, message = "") {
 
 // Keep this function here in order to add correct questions to the counter
 function addToDone(message) {
-    var node = document.createElement("LI");                 // Create a <li> node
-    var textnode = document.createTextNode(message);         // Create a text node
+    let node = document.createElement("LI");                 // Create a <li> node
+    let textnode = document.createTextNode(message);         // Create a text node
     node.appendChild(textnode);                              // Append the text to <li>
     node.classList.add("finished");
     document.querySelector(".correct ul").appendChild(node);
@@ -88,7 +88,7 @@ addToDone("Exercise 6 is correct")
 
 // Exercise 7
 // Given the array of numbers defined below, reverse the array of numbers that you created above. 
-var someNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let someNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 someNumbers.reverse();
 
@@ -126,7 +126,7 @@ addToDone("Exercise 10 is correct")
 
 // This function generates a random number that is both positive and even
 function randomPositiveEvenNumber() {
-    var randomNumber = Math.ceil(Math.random() * 100) + 10;
+    let randomNumber = Math.ceil(Math.random() * 100) + 10;
     if(randomNumber % 2 !== 0) {
         return randomPositiveEvenNumber()
     }
@@ -136,7 +136,7 @@ function randomPositiveEvenNumber() {
 
 // this function generates a random number that is both positive and odd
 function randomPositiveOddNumber() {
-    var randomNumber = Math.ceil(Math.random() * 100) + 10;
+    let randomNumber = Math.ceil(Math.random() * 100) + 10;
     if(randomNumber % 2 === 0) {
         return randomPositiveOddNumber();
     }
@@ -146,7 +146,7 @@ function randomPositiveOddNumber() {
 
 // this function generates a random number that is both negative and even.
 function randomNegativeEvenNumber() {
-    var randomNumber = Math.ceil(Math.random() * -100) - 10;
+    let randomNumber = Math.ceil(Math.random() * -100) - 10;
     if(randomNumber % 2 === 0) {
         return randomNumber;
     }
@@ -156,7 +156,7 @@ function randomNegativeEvenNumber() {
 
 // this function generates a random number that is both negative and odd.
 function randomNegativeOddNumber() {
-    var randomNumber = Math.ceil(Math.random() * -100) - 10;
+    let randomNumber = Math.ceil(Math.random() * -100) - 10;
     if(randomNumber % 2 === 0) {
         return randomNegativeOddNumber();
     }
@@ -165,10 +165,10 @@ function randomNegativeOddNumber() {
 }
 
 // The next 4 lines create variables that hold these generated random numbers
-var positiveEvenNumber = randomPositiveEvenNumber()
-var positiveOddNumber = randomPositiveOddNumber();
-var negativeEvenNumber = randomNegativeEvenNumber();
-var negativeOddNumber = randomNegativeOddNumber();
+let positiveEvenNumber = randomPositiveEvenNumber()
+let positiveOddNumber = randomPositiveOddNumber();
+let negativeEvenNumber = randomNegativeEvenNumber();
+let negativeOddNumber = randomNegativeOddNumber();
 
 // Writing functions
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions for help with writing functions
