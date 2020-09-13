@@ -202,7 +202,7 @@ assert(plusTwo(0), 2, "zero plus 2 is two")
 
 // Exercise 11
 // Write a function definition for a function named addOne that takes in a number and returns that number plus one
-
+const addOne = num => num + 1;
 
 
 assert(addOne(2), 3, "Exercise 11");
@@ -214,7 +214,7 @@ addToDone("Exercise 11 is correct.")
 
 // Exercise 12
 // Write a function definition named isPositive that takes in a number and returns true or false if that number is positive.
-
+const isPositive = num => num > 0;
 
 
 assert(isPositive(positiveOddNumber), true, "Exercise 12");
@@ -226,7 +226,7 @@ addToDone("Exercise 12 is correct.")
 
 // Exercise 13
 // Write a function definition named isNegative that takes in a number and returns true or False if that number is negative.
-
+const isNegative = num => num < 0;
 
 
 assert(isNegative(positiveOddNumber), false, "Exercise 13");
@@ -238,6 +238,7 @@ addToDone("Exercise 13 is correct.")
 
 // Exercise 14
 // Write a function definition named isOdd that takes in a number and returns true or false if that number is odd.
+const isOdd = num => num % 2 !== 0;
 
 assert(isOdd(positiveOddNumber), true, "Exercise 14");
 assert(isOdd(positiveEvenNumber), false, "Exercise 14");
@@ -247,6 +248,7 @@ addToDone("Exercise 14 is correct.")
 
 // Exercise 15
 // Write a function definition named isEven that takes in a number and returns true or false if that number is even.
+const isEven = num => num % 2 === 0;
 
 assert(isEven(2), true, "Exercise 15");
 assert(isEven(positiveOddNumber), false, "Exercise 15");
